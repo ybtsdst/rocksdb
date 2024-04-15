@@ -1,0 +1,39 @@
+{
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable",
+    "sonarlint.testFilePattern": "{/build/shiva/thirdparty/installed/include/**, /usr/include/**}",
+    "cmake.generator": "Unix Makefiles",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
+    },
+    "spellright.language": [],
+    "spellright.documentTypes": [
+        "latex"
+    ],
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.intelliSenseCacheSize": 0,
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.links": false
+    },
+    "clangd.path": "/usr/local/lib/clangd/bin/clangd",
+    "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "--log=verbose",
+        "--pch-storage=memory",
+        "--query-driver=/usr/bin/gcc",
+        "--suggest-missing-includes",
+        "--cross-file-rename",
+        "--compile-commands-dir=/opt/rocksdb/build",
+        "--completion-style=detailed",
+        "-j=4",
+        "--all-scopes-completion",
+        "--limit-references=100",
+        "--limit-results=20",
+        "--malloc-trim"
+    ],
+}

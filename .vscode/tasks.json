@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile rocksdb",
+            "type": "shell",
+            "command": "compiledb",
+            "args": [
+                "make",
+                "-e",
+                "USE_RTTI=1",
+                "PORTABLE=1",
+                "DISABLE_WARNING_AS_ERROR=1",
+                "shared_lib",
+                "-j4",
+                "OBJ_DIR=./build",
+                "PREFIX=/usr/local/lib/rocksdb"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "install rocksdb",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "install-shared",
+                "PREFIX=/usr/local/lib/rocksdb"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

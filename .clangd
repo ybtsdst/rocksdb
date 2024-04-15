@@ -1,0 +1,7 @@
+---
+
+CompileFlags:
+  Add: 
+    - -I/opt/rocksdb
+    - -I/opt/rocksdb/include
+    - -DROCKSDB_PLATFORM_POSIX=1
