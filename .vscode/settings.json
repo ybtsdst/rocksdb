@@ -32,8 +32,8 @@
         "--completion-style=detailed",
         "-j=4",
         "--all-scopes-completion",
-        "--limit-references=100",
-        "--limit-results=20",
+        // "--limit-references=100",
+        // "--limit-results=20",
         "--malloc-trim"
     ],
 }

@@ -4,4 +4,6 @@ CompileFlags:
   Add: 
     - -I/opt/rocksdb
     - -I/opt/rocksdb/include
+    - -isystem/build/shiva/thirdparty/installed/include
     - -DROCKSDB_PLATFORM_POSIX=1
+    - -DGFLAGS=1
